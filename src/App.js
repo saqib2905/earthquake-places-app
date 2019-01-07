@@ -72,6 +72,7 @@ class App extends Component {
                <p>EarthQuake Places List App</p>
             </header>
             <div className="App-content">
+               <h2>Filter your search By Magnitude OR Magnitude type</h2>
                <form>
                   <input
                      type="search"
@@ -94,13 +95,13 @@ class App extends Component {
                   </button>
                </form>
 
-               <label className="label-text">To See Sist Of All Earthquake Places:</label>
+               <label className="label-text">To See List Of Earthquake Places:</label>
                <button onClick={this.handleTogglePlacesList}>
                   {isLoading ? 'Show List' : 'Hide List'}
                </button>
 
                {isLoading ? (
-                  <h1>Click on Show Lists Button to see lists of EarthQuake Places....</h1>
+                  <h1>Click on Show List Button to see lists of EarthQuake Places....</h1>
                ) : (
                   <PlacesList data={places} />
                )}
