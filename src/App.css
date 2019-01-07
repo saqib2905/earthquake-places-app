@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.App-content {
+  background-color: #c7bcf8;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.App .places-list {
+  list-style-type: none;
+}
+
+.places-list li {
+  padding-top: 12px;
+}
+
+input {
+  flex-grow: 1;
+  border-width: 0 0 1px 0;
+  margin: 15px 10px 15px 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #5b45b9;
+  border-style: none;
+  text-shadow: none;
+  color: #c7bcf8;
+  /* //letter-spacing: 1px; */
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #c7bcf8;
+  letter-spacing: 2px;
+}
+
+input:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+button {
+  display: inline;
+  font-size: 0.6em;
+  margin: 15px 15px 15px 0;
+  padding: 10px;
+  background-color: #44338d;
+  border-radius: 5px;
+  border: none;
+  color: #61dafb;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button,
+input {
+  outline: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.App .label-text {
+  display: block;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
